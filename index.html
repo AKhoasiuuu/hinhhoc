@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin Hình học</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="icon" href="logo.png.png" type="image/png">
+    <meta name="description" content="Dự án toán học hình học lớp 9/1 - THCS Chu Văn An">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png.png" alt="CVA" class="logo">
+            <h1 class="cva-text">CVA</h1>
+        </div>
+        <h1>GEOMETRIC MATHEMATICS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><h3>Trang chủ</h3></a></li>
+                <li><a href="gt.html"><h3>Giới thiệu</h3></a></li>
+                <li><a href="lh.html"><h3>Liên hệ</h3></a></li>
+                <li><a href="mt.html"><h3>Máy tính</h3></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main-content">
+        <aside class="sidebar">
+            <div class="search_header">
+                <input type="text" id="search-input" placeholder="Tìm hình..." class="search-box">
+                <hr class="search-divider">
+            </div>
+            <div class="button-list">
+                <button class="topic-button" data-target="info-1">Hình tròn</button>
+                <button class="topic-button" data-target="info-2">Hình chữ nhật</button>
+                <button class="topic-button" data-target="info-3">Hình vuông</button>
+                <button class="topic-button" data-target="info-4">Hình bình hành</button>
+                <button class="topic-button" data-target="info-5">Hình thoi</button>
+                <button class="topic-button" data-target="info-6">Hình thang</button>
+                <button class="topic-button" data-target="info-7">Tam giác thường</button>
+                <button class="topic-button" data-target="info-8">Tam giác vuông</button>
+                <button class="topic-button" data-target="info-9">Tam giác cân</button>
+                <button class="topic-button" data-target="info-10">Hình lập phương</button>
+                <button class="topic-button" data-target="info-11">Hình hộp chữ nhật</button>
+                <button class="topic-button" data-target="info-12">Hình cầu</button>
+                <button class="topic-button" data-target="info-13">Hình nón</button>
+            </div>
+        </aside>
+            <section class="info">
+                <div class="info-item" id="info-1">
+                    <h3>Hình tròn</h3>
+                    <p><strong>Khái niệm:</strong> Hình tròn là tập hợp tất cả các điểm trên mặt phẳng cách đều một điểm cố định (tâm) một khoảng cách không đổi (bán kính).</p>
+                    <p><strong>Tính chất:</strong> Hình tròn có vô số trục đối xứng, mọi đường kính đều là trục đối xứng.</p>
+                    <p><strong>Công thức:</strong></p>
+                    <ul>
+                        <li>Chu vi: C = 2 × π × r</li>
+                        <li>Diện tích: A = π × r²</li>
+                    </ul>
+                </div>
+                <div class="info-item" id="info-2">
+                    <h3>Hình chữ nhật</h3>
+                    <p><strong>Khái niệm:</strong> Hình chữ nhật là tứ giác có bốn góc vuông.</p>
+                    <p><strong>Tính chất:</strong> Các cạnh đối diện song song và bằng nhau, hai đường chéo bằng nhau và cắt nhau tại trung điểm của mỗi đường.</p>
+                    <p><strong>Công thức:</strong></p>
+                    <ul>
+                        <li>Chu vi: P = 2 × (a + b) (a, b là chiều dài và chiều rộng)</li>
+                        <li>Diện tích: A = a × b</li>
+                    </ul>
+                </div>
+                <div class="info-item" id="info-3">
+                    <h3>Hình vuông</h3>
+                    <p><strong>Khái niệm:</strong> Hình vuông là hình chữ nhật có bốn cạnh bằng nhau.</p>
+                    <p><strong>Tính chất:</strong> Có tất cả các tính chất của hình chữ nhật và hình thoi.</p>
+                    <p><strong>Công thức:</strong></p>
+                    <ul>
+                        <li>Chu vi: P = 4 × a (a là độ dài cạnh)</li>
+                        <li>Diện tích: A = a²</li>
+                    </ul>
+                </div>
+                <div class="info-item" id="info-4">
+                    <h3>Hình bình hành</h3>
+                    <p><strong>Khái niệm:</strong> Hình bình hành là tứ giác có các cạnh đối diện song song.</p>
+                    <p><strong>Tính chất:</strong> Các cạnh đối diện bằng nhau, các góc đối diện bằng nhau, hai đường chéo cắt nhau tại trung điểm của mỗi đường.</p>
+                    <p><strong>Công thức:</strong></p>
+                    <ul>
+                        <li>Chu vi: P = 2 × (a + b) (a, b là độ dài hai cạnh kề)</li>
+                        <li>Diện tích: A = a × h (h là chiều cao)</li>
+                    </ul>
+                </div>
+                <div class="info-item" id="info-5">
+                    <h3>Hình thoi</h3>
+                    <p><strong>Khái niệm:</strong> Hình thoi là hình bình hành có bốn cạnh bằng nhau.</p>
+                    <p><strong>Tính chất:</strong> Hai đường chéo vuông góc với nhau và là đường phân giác của các góc.</p>
+                    <p><strong>Công thức:</strong></p>
+                    <ul>
+                        <li>Chu vi: P = 4 × a (a là độ dài cạnh)</li>
+                        <li>Diện tích: A = (d1 × d2) / 2 (d1, d2 là độ dài hai đường chéo)</li>
+                    </ul>
+                </div>
+                <div class="info-item" id="info-6">
+                    <h3>Hình thang</h3>
+                    <p><strong>Khái niệm:</strong> Hình thang là tứ giác có ít nhất một cặp cạnh đối diện song song.</p>
+                    <p><strong>Tính chất:</strong> Hình thang cân có hai cạnh bên bằng nhau và hai góc kề một đáy bằng nhau.</p>
+                    <p><strong>Công thức:</strong></p>
+                    <ul>
+                        <li>Chu vi: P = a + b + c + d (a, b là độ dài hai đáy, c, d là độ dài hai cạnh bên)</li>
+                        <li>Diện tích: A = ((a + b) × h) / 2 (h là chiều cao)</li>
+                    </ul>
+                </div>
+                <div class="info-item" id="info-7">
+                    <h3>Tam giác thường</h3>
+                    <p><strong>Khái niệm:</strong> Tam giác là hình gồm ba cạnh và ba góc.</p>
+                    <p><strong>Tính chất:</strong> Tổng ba góc trong một tam giác bằng 180°, cạnh lớn nhất đối diện với góc lớn nhất.</p>
+                    <p><strong>Công thức:</strong></p>
+                    <ul>
+                        <li>Chu vi: P = a + b + c (a, b, c là độ dài ba cạnh)</li>
+                        <li>Diện tích: A = (b × h) / 2 (b là độ dài cạnh đáy, h là chiều cao)</li>
+                    </ul>
+                </div>
+                <div class="info-item" id="info-8">
+                    <h3>Tam giác vuông</h3>
+                    <p><strong>Khái niệm:</strong> Tam giác vuông là tam giác có một góc vuông.</p>
+                    <p><strong>Tính chất:</strong> Định lý Pythagoras: a² + b² = c² (a, b là độ dài hai cạnh góc vuông, c là độ dài cạnh huyền).</p>
+                    <p><strong>Công thức:</strong></p>
+                    <ul>
+                        <li>Diện tích: A = (a × b) / 2 (a, b là độ dài hai cạnh góc vuông)</li>
+                    </ul>
+                </div>                
+                <div class="info-item" id="info-9">
+                    <h3>Tam giác cân</h3>
+                    <p><strong>Khái niệm:</strong> Tam giác cân là tam giác có hai cạnh bằng nhau.</p>
+                    <p><strong>Tính chất:</strong> Hai góc ở đáy bằng nhau.</p>
+                    <p><strong>Công thức:</strong></p>
+                    <ul>
+                        <li>Diện tích: Sử dụng công thức diện tích tam giác thường hoặc tam giác vuông (nếu là tam giác vuông cân).</li>
+                    </ul>
+                </div>
+                <div class="info-item" id="info-10">
+                    <h3>Hình lập phương</h3>
+                    <p><strong>Khái niệm:</strong> Hình lập phương là khối đa diện đều có 6 mặt đều là hình vuông bằng nhau, 12 cạnh bằng nhau và 8 đỉnh.</p>
+                    <p><strong>Tính chất:</strong> Tất cả các mặt, cạnh và góc trong hình lập phương đều bằng nhau; các mặt đều vuông góc với nhau.</p>
+                    <p><strong>Công thức:</strong></p>
+                    <ul>
+                        <li>Diện tích toàn phần: A = 6 × a² (với a là độ dài cạnh)</li>
+                        <li>Thể tích: V = a³</li>
+                    </ul>
+                </div>
+                <div class="info-item" id="info-11">
+                    <h3>Hình hộp chữ nhật</h3>
+                    <p><strong>Khái niệm:</strong> Hình hộp chữ nhật là hình có sáu mặt đều là hình chữ nhật.</p>
+                    <p><strong>Tính chất:</strong> Các mặt đối diện song song và bằng nhau.</p>
+                    <p><strong>Công thức:</strong></p>
+                    <ul>
+                        <li>Diện tích toàn phần: A = 2 × (a × b + b × c + a × c) (a, b, c là độ dài ba kích thước)</li>
+                        <li>Thể tích: V = a × b × c</li>
+                    </ul>
+                </div>
+                <div class="info-item" id="info-12">
+                    <h3>Hình cầu</h3>
+                    <p><strong>Khái niệm:</strong> Hình cầu là tập hợp tất cả các điểm trong không gian cách đều một điểm cố định (tâm) một khoảng cách không đổi (bán kính).</p>
+                    <p><strong>Tính chất:</strong> Hình cầu có tâm đối xứng và tất cả các bán kính đều bằng nhau.</p>
+                    <p><strong>Công thức:</strong></p>
+                    <ul>
+                        <li>Diện tích mặt cầu: A = 4 × π × r²</li>
+                        <li>Thể tích: V = (4/3) × π × r³</li>
+                    </ul>
+                </div>
+                <div class="info-item" id="info-13">
+                    <h3>Hình nón</h3>
+                    <p><strong>Khái niệm:</strong> Hình nón là khối hình học có một đáy là hình tròn và một đỉnh không nằm trên mặt phẳng đáy, từ đỉnh kẻ xuống mặt đáy là một đoạn thẳng vuông góc với mặt đáy gọi là đường cao.</p>
+                    <p><strong>Tính chất:</strong> Hình nón có một đường tròn đáy và một đỉnh, tất cả các đường sinh (đoạn thẳng nối từ đỉnh đến một điểm bất kỳ trên đường tròn đáy) bằng nhau.</p>
+                    <p><strong>Công thức:</strong></p>
+                    <ul>
+                        <li>Diện tích mặt xung quanh: A = π × r × l (r là bán kính đáy, l là đường sinh)</li>
+                        <li>Diện tích toàn phần: A = π × r × (r + l)</li>
+                        <li>Thể tích: V = (1/3) × π × r² × h (h là chiều cao)</li>
+                    </ul>
+                </div>
+        </section>
+    </section>
+    <footer>
+        <p>© 2024 Stem 9/1 CVA. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

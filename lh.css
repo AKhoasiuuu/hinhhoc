@@ -1,0 +1,130 @@
+    #contact {
+        width: 1900px;
+        height: 780px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        margin: 10px auto;
+    }
+
+    #contact h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 25px;
+        font-size: 2.2em;
+    }
+
+    #contact p {
+        text-align: center;
+        color: #555;
+        margin-bottom: 30px;
+        font-size: 1.1em;
+    }
+
+
+    .contact-card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        box-sizing: border-box;
+        width: 450px;
+        height: 550px;
+        margin: 0;
+        position: absolute;
+        top: 60%;
+        transform: translateY(-50%);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-card.khoa {
+        left: 37.5%;
+    }
+
+    .contact-card.kiet {
+        right: 22%;
+    }
+
+    .contact-card:hover {
+        transform: translateY(-50%) translateY(-8px);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .avatar-container {
+        width: 200px; 
+        height: 200px; 
+        border-radius: 100%; 
+        overflow: hidden;
+        margin: 0 auto 20px auto;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+    
+    .avatar-container:hover {
+        transform: scale(1.05);
+    }
+    
+    .avatar {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+    
+    .avatar:hover {
+        transform: scale(1.1);
+    }
+    
+    .contact-card h3 {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 15px;
+        font-size: 1.5em;
+        letter-spacing: -0.02em;
+    }
+    
+    .info-box {
+        margin-top: auto; /* Đẩy xuống dưới cùng */
+    }
+    
+    .info-box p {
+        margin: 5px 0; /* Giảm khoảng cách trên và dưới */
+        font-size: 1.1em;
+        color: #555;
+        line-height: 0; /* Giảm chiều cao dòng */
+    }
+    
+    .info-box b {
+        font-weight: 600;
+        color: #333;
+    }
+    
+    .info-box a {
+        color: #3498db;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+    
+    .info-box a:hover {
+        color: #217dbb;
+        text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+        .contact-frame {
+            width: 95%;
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-card {
+            position: static;
+            transform: none;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+    }
