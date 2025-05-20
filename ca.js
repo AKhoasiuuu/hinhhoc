@@ -7,8 +7,8 @@ function clearDisplay() {
 }
 
 function appendNumber(num) {
-  if (resetDisplay) {
-    display.value = '';  // Xóa số cũ khi bắt đầu nhập số mới
+  if (resetDisplay || display.value === 'Lỗi biểu thức' || display.value === 'Lỗi chia cho 0') {
+    display.value = '';
     resetDisplay = false;
   }
   display.value += num;
@@ -16,7 +16,7 @@ function appendNumber(num) {
 
 function appendOperator(op) {
   const lastChar = display.value.slice(-1);
-  if (resetDisplay) resetDisplay = false; // Nếu đang reset thì bỏ qua
+  if (resetDisplay) resetDisplay = false; 
   if ('+-*/%'.includes(lastChar)) {
     display.value = display.value.slice(0, -1) + op;
   } else if (display.value.length > 0) {
@@ -43,7 +43,6 @@ function changeSign() {
     val = -val;
     display.value = val.toString();
   } catch {
-    // không làm gì nếu lỗi
   }
 }
 
@@ -55,7 +54,7 @@ function calculate() {
       display.value = 'Lỗi chia cho 0';
     } else {
       display.value = result;
-      resetDisplay = true; // Đánh dấu cần reset khi nhập số mới
+      resetDisplay = true; 
     }
   } catch {
     display.value = 'Lỗi biểu thức';
